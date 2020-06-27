@@ -1,0 +1,30 @@
+{
+  "name": "bernskioldmedia/bm-page-specific-css",
+  "description": "Allows editors to add styles specific for pages and post.",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=7.2",
+    "matthiasmullie/minify": "^1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.2",
+    "10up/wp_mock": "dev-master",
+    "bernskioldmedia/phpcs-wordpress": "dev-master"
+  },
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Bernskiold Media",
+      "email": "info@bernskioldmedia.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BernskioldMedia\\WP\\PageSpecificCSS\\": "src/"
+    }
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf ."
+  }
+}

@@ -1,0 +1,32 @@
+##
+# Exclude from release archives.
+#
+# Here we add resources that are not needed in the download
+# for development use.
+##
+/.git                 export-ignore
+/.gitattributes       export-ignore
+/.gitignore           export-ignore
+/composer.lock        export-ignore
+/package-lock.json    export-ignore
+/vendor               export-ignore
+/mix-manifest.json	  export-ignore
+/node_modules         export-ignore
+.gitkeep              export-ignore
+.travis.yml			  export-ignore
+.npmrc				  export-ignore
+.editorconfig		  export-ignore
+.eslintignore		  export-ignore
+.eslintrc			  export-ignore
+/bin				  export-ignore
+/tests				  export-ignore
+
+##
+# Handle line endings.
+# See https://help.github.com/articles/dealing-with-line-endings/
+##
+* text eol=lf
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
