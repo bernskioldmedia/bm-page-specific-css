@@ -18,7 +18,7 @@
 node_modules/
 
 # Ignore built assets.
-dist/**
+assets/scripts/dist/**
 mix-manifest.json
 
 # Ignore .idea
