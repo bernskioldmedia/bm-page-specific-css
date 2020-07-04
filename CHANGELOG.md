@@ -4,5 +4,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [Unreleased]
 
+## [1.0.1] - 2020-07-04
+
 ### Changed
 - Only load page-specific CSS on pages.

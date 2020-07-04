@@ -16,7 +16,7 @@ class Plugin {
 	 *
 	 * @var string
 	 */
-	protected const VERSION = '1.0.0';
+	protected const VERSION = '1.0.1';
 
 	/**
 	 * Plugin Textdomain
