@@ -3,6 +3,7 @@
   "description": "Allows editors to add styles specific for pages and post.",
   "type": "wordpress-plugin",
   "require": {
+    "composer/installers": "~1.0",
     "php": ">=7.2",
     "matthiasmullie/minify": "^1.3"
   },
