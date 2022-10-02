@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-10-02
+
+### Changed
+
+- Added support for all post types.
+
 ## [1.0.1] - 2020-07-04
 
 ### Changed
