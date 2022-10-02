@@ -27,6 +27,7 @@ export default function CSSPanel() {
 				<AceEditor
 					onChange={onChange}
 					width="100%"
+					height="100vh"
 					mode="css"
 					theme="github"
 					name="bm-page-specific-css"

@@ -1,0 +1,31 @@
+# Copyright (C) 2022 Bernskiold Media
+# This file is distributed under the same license as the BM Page Specific CSS package.
+msgid ""
+msgstr ""
+"Project-Id-Version: BM Page Specific CSS 1.0.1\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/bm-page-specific-css\n"
+"POT-Creation-Date: 2022-10-02 09:41:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2022-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.6\n"
+
+#. Plugin Name of the plugin/theme
+msgid "BM Page Specific CSS"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://bernskioldmedia.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Allows editors to add styles specific for pages and post."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Bernskiold Media"
+msgstr ""

@@ -55,55 +55,24 @@ class Plugin {
 	}
 
 	/**
-	 * Cloning is forbidden.
-	 *
-	 * @since 1.2
-	 */
-	private function __clone() {
-	}
-
-	/**
-	 * Unserializing instances of this class is forbidden.
-	 *
-	 * @since 1.2
-	 */
-	private function __wakeup() {
-	}
-
-	/**
 	 * Constructor
 	 */
 	public function __construct() {
-
-		do_action( 'before_bm_page_specific_css_loading' );
-
-		$this->loaders();
-		$this->init_hooks();
-
-		do_action( 'after_bm_page_specific_css_loaded' );
-
-	}
-
-	/**
-	 * Hooks that are run on the time of init.
-	 */
-	private function init_hooks(): void {
 
 		add_action( 'init', [ self::class, 'load_languages' ] );
 		add_action( 'init', [ self::class, 'register_meta' ] );
 
 		Assets::hooks();
 		Generate_Files::hooks();
-
-		do_action( 'bm_page_specific_css_init' );
 	}
 
 	/**
 	 * Register the styles as post meta.
 	 */
 	public static function register_meta() {
+		$post_types = get_post_types();
 
-		foreach ( [ 'post', 'page' ] as $object_type ) {
+		foreach ( apply_filters( 'bm_page_specific_css_post_types', $post_types ) as $object_type ) {
 			register_meta( $object_type, self::CSS_META_KEY, [
 				'show_in_rest' => true,
 				'type'         => 'string',
@@ -132,17 +101,10 @@ class Plugin {
 	}
 
 	/**
-	 * We have various points of data that need to be called and loaded.
-	 * What we load are stored in class variables. Add your class name there.
-	 */
-	public function loaders(): void {
-	}
-
-	/**
 	 * Get the path to the plugin folder, or the specified
 	 * file relative to the plugin folder home.
 	 *
-	 * @param  string  $file
+	 * @param string $file
 	 *
 	 * @return string
 	 */
@@ -154,7 +116,7 @@ class Plugin {
 	 * Get the URL to the plugin folder, or the specified
 	 * file relative to the plugin folder home.
 	 *
-	 * @param  string  $file
+	 * @param string $file
 	 *
 	 * @return string
 	 */
@@ -166,7 +128,7 @@ class Plugin {
 	 * Get the URL to the assets folder, or the specified
 	 * file relative to the assets folder home.
 	 *
-	 * @param  string  $file
+	 * @param string $file
 	 *
 	 * @return string
 	 */
