@@ -50,7 +50,7 @@ export default function CSSPanel() {
 function getCSSValue() {
 	const meta = wp.data.select( "core/editor" ).getEditedPostAttribute( "meta" );
 
-	if ( meta.page_specific_styles ) {
+	if ( meta && meta.page_specific_styles ) {
 		return meta.page_specific_styles;
 	}
 	return "";

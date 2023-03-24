@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [Unreleased]
 
+## [1.1.1] - 2023-03-24
+
+### Fixed
+- Fixed issue where a red notices was displayed on custom post types that this plugin was not working properly.
+
 ## [1.1.0] - 2022-10-02
 
 ### Changed

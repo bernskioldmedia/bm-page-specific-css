@@ -16,7 +16,7 @@ class Plugin {
 	 *
 	 * @var string
 	 */
-	protected const VERSION = '1.1.0';
+	protected const VERSION = '1.1.1';
 
 	/**
 	 * Plugin Textdomain
@@ -60,7 +60,7 @@ class Plugin {
 	public function __construct() {
 
 		add_action( 'init', [ self::class, 'load_languages' ] );
-		add_action( 'init', [ self::class, 'register_meta' ] );
+		add_action( 'init', [ self::class, 'register_meta' ], 20 );
 
 		Assets::hooks();
 		Generate_Files::hooks();

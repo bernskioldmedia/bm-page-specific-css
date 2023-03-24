@@ -2,6 +2,9 @@
 Adds a Gutenberg panel where you can add specific page-specific CSS.
 This is then saved into files, minified and included only only on the very specific page it is created for.
 
+## Custom Post Types
+In order to use this plugin on custom post type, the post type must have the 'custom-fields' support.
+
 ## Coding Style
 We exclusively try and use the WordPress coding practices for all languages,
 which includes PHP, HTML, CSS and JavaScript.
